@@ -1,0 +1,16 @@
+{
+  "name": "threejs-tsl-template",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "dependencies": {
+    "gsap": "^3.15.0",
+    "three": "^0.183.2",
+    "tweakpane": "^4.0.5",
+    "vite": "^5.4.10"
+  }
+}
