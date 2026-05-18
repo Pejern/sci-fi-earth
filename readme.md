@@ -1,8 +1,8 @@
-[中文](readme.md)
-
 # Portfolio · Particle globe & Flyline visualization (Three.js WebGPU · TSL)
 
 A **personal portfolio** real-time 3D visualization built with **WebGPU** and the **Three.js Shading Language (TSL)**: particle landmasses, a hex-style base treatment, energy-style shell lighting, multiple **Flyline** arcs linking hubs worldwide, **Tweakpane** for live tuning, and a **TSL post pipeline** (bloom and vignette). The visual direction targets large-screen / sci‑fi FUI aesthetics while staying on a modern browser graphics stack.
+
+### Leave a star 🌟
 
 ![Runtime screenshot: particle globe, fly lines, debug panel](docs/preview.png)
 
@@ -15,7 +15,7 @@ A **personal portfolio** real-time 3D visualization built with **WebGPU** and th
 
 ---
 
-## Highlights (CV-friendly)
+## Highlights 
 
 | Area | Details |
 |------|---------|
@@ -63,18 +63,6 @@ npm run build   # output to dist/
 
 ---
 
-## Project layout (compact)
-
-| Path | Role |
-|------|------|
-| `src/app/Experience.js` | Scene lifecycle; wires World + Renderer |
-| `src/renderer/Renderer.js` | `WebGPURenderer`, `RenderPipeline`, bloom + vignette |
-| `src/world/world.js` | Composes particle globe, fly lines, shield, inner sphere, borders—click wave |
-| `src/world/*.js` | Feature modules + debug bindings |
-| `src/utils/debug.js` | Tweakpane integration |
-| `vite.config.js` | `root: src/`, `public/`, build output |
-
----
 
 ## References (TSL / WebGPU)
 
@@ -84,7 +72,3 @@ npm run build   # output to dist/
 - [TSL editor example](https://threejs.org/examples/?q=webgpu#webgpu_tsl_editor)
 
 ---
-
-## License
-
-If you open-source the repo for reuse, add a `LICENSE` at the root (e.g. MIT).
