@@ -8,24 +8,7 @@ A **personal portfolio** real-time 3D visualization built with **WebGPU** and th
 
 ---
 
-## Goals & positioning
 
-- Deliver a **high-tech Earth scene** in a **single-page web** app that is presentable and easy to iterate on—suitable for demo walls, tech talks, or interview portfolio walkthroughs.
-- Implement rendering and post in **TSL** on **WebGPU**, aligned with where Three.js is heading, rather than relying solely on the legacy WebGL path.
-
----
-
-## Highlights 
-
-| Area | Details |
-|------|---------|
-| Real-time rendering | `WebGPURenderer` async init; resolution / DPR handling |
-| Shading & post | `RenderPipeline` with `pass` / `BloomNode`; vignette composed in TSL (`uv`, `smoothstep`, uniforms) |
-| Scene complexity | Large-scale particle landmass; layered geometry and effects (inner sphere, borders, shield, fly lines, etc.) |
-| Data & motion | Hub / target lat–lng drive fly lines; tunable delays, staggering, looping, playback controls |
-| Engineering | **Vite** dev & build; modular `Experience` / `World` / `world/*.js`; grouped **Tweakpane** wiring via `debuggerInit` |
-
----
 
 ## Visuals & interaction (summary)
 
@@ -60,15 +43,5 @@ npm run dev
 ```bash
 npm run build   # output to dist/
 ```
-
----
-
-
-## References (TSL / WebGPU)
-
-- [Three.js Shading Language (official)](https://github.com/mrdoob/three.js/wiki/Three.js-Shading-Language)
-- [TSL Q&A](https://github.com/boytchev/tsl-textures/wiki/Q&A)
-- [Three.js WebGPU examples](https://threejs.org/examples/?q=webgpu#webgpu_parallax_uv)
-- [TSL editor example](https://threejs.org/examples/?q=webgpu#webgpu_tsl_editor)
 
 ---
